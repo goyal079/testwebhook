@@ -1,0 +1,21 @@
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Webhook
+      uses: joelwmale/webhook-action@master
+      with:
+        url: ${{ 'https://062f-2405-201-2024-580c-302a-ff1d-b989-e086.ngrok.io' }}
+        headers: '{"repository": "joelwmale/webhook-action"}'
+        body: '{"event": "deployment", "repository": "joelwmale/webhook-action"}'
