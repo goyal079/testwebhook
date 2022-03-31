@@ -16,6 +16,6 @@ jobs:
     - name: Invoke deployment hook
       uses: distributhor/workflow-webhook@v2
       env:
-        webhook_url: ${{ 'https://062f-2405-201-2024-580c-302a-ff1d-b989-e086.ngrok.io/api/testwebhook' }}
-        webhook_secret: ${{ "Y0uR5ecr3t" }}
+        webhook_url: ${{ 'https://cd7d-2405-201-2024-580c-302a-ff1d-b989-e086.ngrok.io/api/testwebhook' }}
+        webhook_secret: ${{ "fjhglhgouyfu" }}
         data: '{ "weapon": "hammer", "drink" : "beer" }'
