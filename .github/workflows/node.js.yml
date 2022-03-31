@@ -17,5 +17,5 @@ jobs:
       uses: distributhor/workflow-webhook@v2
       env:
         webhook_url: ${{ 'https://cd7d-2405-201-2024-580c-302a-ff1d-b989-e086.ngrok.io/api/testwebhook' }}
-        webhook_secret: ${{ fjhglhgouyfu }}
+        webhook_secret: ${{ secrets.WEBHOOK_SECRET }}
         data: '{ "weapon": "hammer", "drink" : "beer" }'
